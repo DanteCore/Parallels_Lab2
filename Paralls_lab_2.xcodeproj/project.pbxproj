@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2391F2F91AEE805700BE7457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2391F2F81AEE805700BE7457 /* main.m */; };
+		2391F3011AEE808F00BE7457 /* CPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 2391F3001AEE808F00BE7457 /* CPU.m */; };
+		2391F3071AEE81A100BE7457 /* CPUProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2391F3061AEE81A100BE7457 /* CPUProcess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		2391F2F51AEE805700BE7457 /* Paralls_lab_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Paralls_lab_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		2391F2F81AEE805700BE7457 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2391F2FF1AEE808F00BE7457 /* CPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPU.h; sourceTree = "<group>"; };
+		2391F3001AEE808F00BE7457 /* CPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPU.m; sourceTree = "<group>"; };
+		2391F3051AEE81A100BE7457 /* CPUProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUProcess.h; sourceTree = "<group>"; };
+		2391F3061AEE81A100BE7457 /* CPUProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUProcess.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				2391F2F81AEE805700BE7457 /* main.m */,
+				2391F2FF1AEE808F00BE7457 /* CPU.h */,
+				2391F3001AEE808F00BE7457 /* CPU.m */,
+				2391F3051AEE81A100BE7457 /* CPUProcess.h */,
+				2391F3061AEE81A100BE7457 /* CPUProcess.m */,
 			);
 			path = Paralls_lab_2;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2391F3011AEE808F00BE7457 /* CPU.m in Sources */,
+				2391F3071AEE81A100BE7457 /* CPUProcess.m in Sources */,
 				2391F2F91AEE805700BE7457 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
