@@ -13,8 +13,6 @@
 
 
 #define QUEQUE_MAX_SIZE 5
-int queue_size;
-dispatch_semaphore_t semaphore;
 
 
 
@@ -22,7 +20,7 @@ dispatch_semaphore_t semaphore;
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        semaphore = dispatch_semaphore_create(1);
+        
         
         dispatch_group_t group = dispatch_group_create();
         dispatch_queue_t queue1 = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
@@ -30,6 +28,8 @@ int main(int argc, const char * argv[]) {
         
         CPU *cpu1 = [[CPU alloc]initWithId:1 queque:queue1 group:group];
         CPU *cpu2 = [[CPU alloc]initWithId:2 queque:queue2 group:group];
+        
+        
         
         
         __block int queue_size = 0;
@@ -66,6 +66,7 @@ int main(int argc, const char * argv[]) {
             
             [NSThread sleepForTimeInterval:0.2];
         }
+        
         
         
         
